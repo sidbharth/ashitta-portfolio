@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashitta - Product Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Real-time clock function
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            const clockElement = document.getElementById('live-clock');
+            if (clockElement) {
+                clockElement.textContent = timeString;
+            }
+        }
+        
+        // Update clock every second
+        setInterval(updateClock, 1000);
+        
+        // Initialize clock when page loads
+        window.addEventListener('load', updateClock);
+    </script>
     <style>
         @font-face {
             font-family: 'CustomFont';
@@ -61,16 +83,16 @@
                 <!-- Header -->
                 <div>
                     <h1 class="text-4xl font-bold mb-2 text-black">Ashitta</h1>
-                    <p class="text-gray-600 text-sm">7:34:52 PM</p>
+                    <p class="text-gray-600 text-sm" id="live-clock">8:23:27 PM</p>
                 </div>
 
                 <!-- Product Designer Section -->
                 <div>
                     <h2 class="text-xl font-bold mb-4 text-black">PRODUCT DESIGNER</h2>
-                    <p class="text-gray-700 leading-relaxed">
+                    <p class="text-gray-700 leading-relaxed mb-4">
                         Crafting digital experiences that feel good and make money using design thinking, user psychology and design for business since 3+ years.
                     </p>
-                    <p class="text-gray-700 leading-relaxed mt-4">
+                    <p class="text-gray-700 leading-relaxed">
                         Open to opportunities, excited to work in mental health, preventive heathcare, alternative education and B2B SaaS.
                     </p>
                 </div>
