@@ -29,8 +29,16 @@
     </script>
     <style>
         @font-face {
-            font-family: 'CustomFont';
-            src: url('./fonts/custom-font.ttf') format('truetype');
+            font-family: 'TitleFont';
+            src: url('./fonts/title-font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'BodyFont';
+            src: url('./fonts/body-font.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -43,9 +51,19 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'CustomFont', sans-serif;
+            font-family: 'BodyFont', sans-serif;
             background-color: #f5f5f5;
             overflow: hidden; /* Prevents body scroll */
+        }
+
+        /* Font classes */
+        .font-title {
+            font-family: 'TitleFont', sans-serif;
+        }
+
+        .font-body {
+            font-family: 'BodyFont', sans-serif;
+            line-height: 1.5;
         }
         
         /* Hide scrollbar completely */
@@ -73,25 +91,25 @@
             <div class="space-y-8">
                 <!-- Header -->
                 <div class="pb-4 border-b border-gray-200">
-                    <h1 class="text-4xl font-black mb-1 text-black leading-none">Ashitta</h1>
-                    <p class="text-gray-600 text-base" id="live-clock">8:23:27 PM</p>
+                    <h1 class="text-4xl font-black mb-1 text-black leading-none font-title">Ashitta</h1>
+                    <p class="text-gray-600 text-base font-body" id="live-clock">8:23:27 PM</p>
                 </div>
 
                 <!-- Product Designer Section -->
                 <div class="pt-20 pb-8 border-b border-gray-200">
-                    <h2 class="text-2xl font-black mb-4 text-black leading-none">PRODUCT DESIGNER</h2>
-                    <p class="text-gray-700 leading-relaxed mb-4">
+                    <h2 class="text-2xl font-black mb-4 text-black leading-none font-title">PRODUCT DESIGNER</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4 font-body">
                         Crafting digital experiences that feel good and make money using design thinking, user psychology and design for business since 3+ years.
                     </p>
-                    <p class="text-gray-700 leading-relaxed">
+                    <p class="text-gray-700 leading-relaxed font-body">
                         Open to opportunities, excited to work in mental health, preventive heathcare, alternative education and B2B SaaS.
                     </p>
                 </div>
 
                 <!-- Contact Section -->
                 <div class="pt-20 pb-8 border-b border-gray-200">
-                    <h2 class="text-2xl font-black mb-4 text-black leading-none">CONTACT</h2>
-                    <div class="space-y-0.5 text-gray-700">
+                    <h2 class="text-2xl font-black mb-4 text-black leading-none font-title">CONTACT</h2>
+                    <div class="space-y-0.5 text-gray-700 font-body">
                         <p>ashittashah25@gmail.com</p>
                         <p>Book a Call</p>
                         <p>Twitter</p>
@@ -104,47 +122,47 @@
 
                 <!-- Testimonials -->
         <div class="pb-8 border-b border-gray-200">
-        <h2 class="text-2xl font-black mb-4 text-black leading-none">TESTIMONIALS</h2>
+        <h2 class="text-2xl font-black mb-4 text-black leading-none font-title">TESTIMONIALS</h2>
                     
                     <div class="space-y-8">
                         <div class="py-4 pb-8 border-b border-gray-200">
-                            <p class="text-gray-700 leading-relaxed italic mb-3">
+                            <p class="text-gray-700 leading-relaxed italic mb-3 font-body">
                                 "I've been collaborating with Ashitta for over a year now, and she consistently demonstrates a positive attitude and strong collaborative spirit. She works closely with team members from various departments, ensuring alignment on project objectives and maintaining open communication channels throughout the design process. What stands out most is her willingness to learn and adapt. She remains open to feedback and uses it constructively, striving to refine her work to better meet project needs. Whether it's brainstorming creative solutions or responding to last-minute changes, she stays flexible and solution-oriented. Overall, I appreciate her dedication and the energy she brings to team discussions. She would be a valuable addition to any team looking for a proactive and supportive designer."
                             </p>
-                            <p class="text-black font-bold">- Christina Vlastiuk</p>
-                            <p class="text-gray-600 text-sm">Senior Designer @AgilePoint</p>
+                            <p class="text-black font-bold font-body">- Christina Vlastiuk</p>
+                            <p class="text-gray-600 text-sm font-body">Senior Designer @AgilePoint</p>
                         </div>
 
                         <div class="py-4 pb-8 border-b border-gray-200">
-                            <p class="text-gray-700 leading-relaxed italic mb-3">
+                            <p class="text-gray-700 leading-relaxed italic mb-3 font-body">
                                 "I had the pleasure of working with Aashita during her time as a UX designer at ideaForge, and I wholeheartedly recommend her for any UX design roles. Despite her short tenure, Aashita made a significant impact with her creativity, dedication, and professionalism. Aashita's collaborative nature and excellent communication skills made her a valuable asset to our team. I have no doubt she will continue to thrive in her future endeavors."
                             </p>
-                            <p class="text-black font-bold">- Prateek Natani</p>
-                            <p class="text-gray-600 text-sm">Design Manager @ideaForge</p>
+                            <p class="text-black font-bold font-body">- Prateek Natani</p>
+                            <p class="text-gray-600 text-sm font-body">Design Manager @ideaForge</p>
                         </div>
 
                         <div class="py-4 pb-8 border-b border-gray-200">
-                            <p class="text-gray-700 leading-relaxed italic mb-3">
+                            <p class="text-gray-700 leading-relaxed italic mb-3 font-body">
                                 "Working with Ashitta has been an absolute pleasure. I've witnessed her talent and passion for design and she's been not only a fantastic colleague but also a dear friend. Apart from her impressive skills and aesthetic sensibility, she brings positivity to every project that she works on. I wholeheartedly recommend Ashitta for any design project because of her remarkable creativity and dedication."
                             </p>
-                            <p class="text-black font-bold">- Ketaki Karve</p>
-                            <p class="text-gray-600 text-sm">Senior Designer and Manager @Sukratu</p>
+                            <p class="text-black font-bold font-body">- Ketaki Karve</p>
+                            <p class="text-gray-600 text-sm font-body">Senior Designer and Manager @Sukratu</p>
                         </div>
 
                         <div class="py-4 pb-8 border-b border-gray-200">
-                            <p class="text-gray-700 leading-relaxed italic mb-3">
+                            <p class="text-gray-700 leading-relaxed italic mb-3 font-body">
                                 "Ashitta was a very good part of our team. She is diligent, hardworking and has a keen sense of design - all ingredients needed for a good designer. I'm very sure she'll be a valuable addition to any team she is a part of."
                             </p>
-                            <p class="text-black font-bold">- Anand Bongir</p>
-                            <p class="text-gray-600 text-sm">Design Lead and Founder @Sukratu</p>
+                            <p class="text-black font-bold font-body">- Anand Bongir</p>
+                            <p class="text-gray-600 text-sm font-body">Design Lead and Founder @Sukratu</p>
                         </div>
 
                         <div class="py-4">
-                            <p class="text-gray-700 leading-relaxed italic mb-3">
+                            <p class="text-gray-700 leading-relaxed italic mb-3 font-body">
                                 "It is my absolute pleasure to recommend Miss Ashitta Shah. I enjoyed my time with her during her Internship with us and came to know her as a truly valuable asset to our company. She is honest, dependable, and incredibly hard-working. Her knowledge of construction techniques in design, photography and content writing was a great advantage to us. Without a doubt, I confidently recommend Ashitta to join any Company in the future."
                             </p>
-                            <p class="text-black font-bold">- Sneha Bagrecha</p>
-                            <p class="text-gray-600 text-sm">Founder @IndieGood</p>
+                            <p class="text-black font-bold font-body">- Sneha Bagrecha</p>
+                            <p class="text-gray-600 text-sm font-body">Founder @IndieGood</p>
                         </div>
                     </div>
                 </div>
@@ -155,8 +173,8 @@
         <div class="w-1/2 bg-white scroll-column custom-scrollbar border-r border-gray-200">
             <div class="p-8 pt-6">
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h2 class="text-2xl font-black text-black leading-none">WORK</h2>
-                    <p class="text-gray-600">4 Selected Projects</p>
+                    <h2 class="text-2xl font-black text-black leading-none font-title">WORK</h2>
+                    <p class="text-gray-600 font-body">4 Selected Projects</p>
                 </div>
 
                 <!-- Project 1 - Creature Studio -->
@@ -168,13 +186,13 @@
                     
                     <div class="grid grid-cols-5 gap-6">
                         <div class="col-span-2">
-                            <h3 class="text-sm font-bold text-black">1. CREATURE STUDIO</h3>
+                            <h3 class="text-sm font-bold text-black font-title">1. CREATURE STUDIO</h3>
                         </div>
                         <div class="col-span-3 space-y-4">
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed font-body">
                                 Creatively directed and designed an interactive web presence for a creative agency known for bold, fun and whimsical experiences in XR, AR and VR
                             </p>
-                            <button class="text-black font-medium hover:underline">
+                            <button class="text-black font-medium hover:underline font-body">
                                 Read Case Study
                             </button>
                         </div>
@@ -186,18 +204,18 @@
                     <div class="relative mb-4">
                         <div class="w-full h-64 bg-blue-900 rounded-lg overflow-hidden relative flex items-center justify-center">
                             <div class="text-white text-center">
-                                <h4 class="text-xl font-bold mb-2">HealthTech Platform</h4>
-                                <p class="text-sm opacity-80">Preventive Healthcare Dashboard</p>
+                                <h4 class="text-xl font-bold mb-2 font-title">HealthTech Platform</h4>
+                                <p class="text-sm opacity-80 font-body">Preventive Healthcare Dashboard</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="space-y-4">
-                        <h3 class="text-sm font-bold text-black">2. HEALTHTECH PLATFORM</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h3 class="text-sm font-bold text-black font-title">2. HEALTHTECH PLATFORM</h3>
+                        <p class="text-gray-700 leading-relaxed font-body">
                             Designed a comprehensive preventive healthcare platform focusing on user-centered design principles. Created intuitive dashboards for both patients and healthcare providers, emphasizing accessibility and clear information architecture.
                         </p>
-                        <button class="text-black font-medium hover:underline">
+                        <button class="text-black font-medium hover:underline font-body">
                             Read Case Study
                         </button>
                     </div>
@@ -208,18 +226,18 @@
                     <div class="relative mb-4">
                         <div class="w-full h-64 bg-purple-900 rounded-lg overflow-hidden relative flex items-center justify-center">
                             <div class="text-white text-center">
-                                <h4 class="text-xl font-bold mb-2">EduTech Solution</h4>
-                                <p class="text-sm opacity-80">Alternative Learning Platform</p>
+                                <h4 class="text-xl font-bold mb-2 font-title">EduTech Solution</h4>
+                                <p class="text-sm opacity-80 font-body">Alternative Learning Platform</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="space-y-4">
-                        <h3 class="text-sm font-bold text-black">3. EDUTECH SOLUTION</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h3 class="text-sm font-bold text-black font-title">3. EDUTECH SOLUTION</h3>
+                        <p class="text-gray-700 leading-relaxed font-body">
                             Developed an innovative alternative education platform that reimagines online learning. Focused on creating engaging, interactive experiences that cater to different learning styles and promote student engagement.
                         </p>
-                        <button class="text-black font-medium hover:underline">
+                        <button class="text-black font-medium hover:underline font-body">
                             Read Case Study
                         </button>
                     </div>
@@ -230,18 +248,18 @@
                     <div class="relative mb-4">
                         <div class="w-full h-64 bg-gray-800 rounded-lg overflow-hidden relative flex items-center justify-center">
                             <div class="text-white text-center">
-                                <h4 class="text-xl font-bold mb-2">B2B SaaS Platform</h4>
-                                <p class="text-sm opacity-80">Enterprise Workflow Solution</p>
+                                <h4 class="text-xl font-bold mb-2 font-title">B2B SaaS Platform</h4>
+                                <p class="text-sm opacity-80 font-body">Enterprise Workflow Solution</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="space-y-4">
-                        <h3 class="text-sm font-bold text-black">4. B2B SAAS PLATFORM</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h3 class="text-sm font-bold text-black font-title">4. B2B SAAS PLATFORM</h3>
+                        <p class="text-gray-700 leading-relaxed font-body">
                             Created a comprehensive B2B SaaS platform focusing on streamlined workflows and enterprise-grade functionality. Emphasized scalability, user adoption, and seamless integration with existing business processes.
                         </p>
-                        <button class="text-black font-medium hover:underline">
+                        <button class="text-black font-medium hover:underline font-body">
                             Read Case Study
                         </button>
                     </div>
@@ -251,20 +269,20 @@
 
         <!-- Right Column - Resume (INDEPENDENTLY SCROLLABLE) -->
         <div class="w-1/4 bg-white p-8 scroll-column custom-scrollbar">
-    <div class="mt-1">
-        <div class="mb-4 pb-4 border-b border-gray-200">
-            <h2 class="text-2xl font-black text-black leading-none">RESUME</h2>
-            <p class="text-gray-600 invisible">Spacing placeholder</p>
-        </div>
+            <div class="mt-3">
+                <div class="mb-8 pb-8 border-b border-gray-200">
+                    <h2 class="text-2xl font-black text-black leading-none font-title">RESUME</h2>
+                    <p class="text-gray-600 invisible font-body">Spacing placeholder</p>
+                </div>
 
                 <!-- Skills -->
                 <div class="mb-6 pb-6 border-b border-gray-200">
     <div class="grid grid-cols-5 gap-6">
         <div class="col-span-2">
-            <h3 class="text-sm font-bold text-black">Skills</h3>
+            <h3 class="text-sm font-bold text-black font-body">Skills</h3>
         </div>
         <div class="col-span-3">
-            <div class="space-y-0.5 text-gray-700 text-sm leading-tight">
+            <div class="space-y-0.5 text-gray-700 text-sm leading-tight font-body">
                         <p>Research</p>
                         <p>Heuristic Analysis</p>
                         <p>UX Audit</p>
@@ -294,16 +312,16 @@
 <div class="mb-6 pb-6 border-b border-gray-200">
     <div class="grid grid-cols-5 gap-6">
         <div class="col-span-2">
-            <h3 class="text-sm font-bold text-black">Experience</h3>
+            <h3 class="text-sm font-bold text-black font-body">Experience</h3>
         </div>
         <div class="col-span-3">
                     
                     <!-- UX Designer - AgilePoint -->
                     <div class="mb-4">
-                        <h4 class="text-sm font-bold text-black">UX Designer</h4>
-                        <p class="text-gray-600 text-sm font-semibold mb-2">AgilePoint</p>
+                        <h4 class="text-sm font-bold text-black font-body">UX Designer</h4>
+                        <p class="text-gray-600 text-sm font-semibold mb-2 font-body">AgilePoint</p>
                         
-                        <ul class="space-y-1 text-gray-700 text-xs leading-tight">
+                        <ul class="space-y-1 text-gray-700 text-xs leading-tight font-body">
                             <li>• Contributed to the creation and maintenance of the design system to ensure consistency and scalability across products</li>
                             <li>• Conducted UX audits to identify usability issues and improve user experience across key product areas</li>
                             <li>• Improved UI design for existing demo applications to enhance visual appeal and usability</li>
@@ -317,10 +335,10 @@
 
                     <!-- Web Design Consultant -->
                     <div class="mb-4">
-                        <h4 class="text-sm font-bold text-black">Web Design Consultant</h4>
-                        <p class="text-gray-600 text-sm font-semibold mb-2">Freelance</p>
+                        <h4 class="text-sm font-bold text-black font-body">Web Design Consultant</h4>
+                        <p class="text-gray-600 text-sm font-semibold mb-2 font-body">Freelance</p>
                         
-                        <ul class="space-y-1 text-gray-700 text-xs leading-tight">
+                        <ul class="space-y-1 text-gray-700 text-xs leading-tight font-body">
                             <li>• Designed and developed custom websites for small to medium businesses</li>
                             <li>• Provided strategic design consultation to improve user engagement and conversion rates</li>
                             <li>• Collaborated with clients to define project requirements and deliver pixel-perfect designs</li>
@@ -334,18 +352,18 @@
 
                 <!-- Education -->
                 <div class="mb-6 pb-6 border-b border-gray-200">
-                    <h3 class="text-sm font-bold text-black mb-3">Education</h3>
+                    <h3 class="text-sm font-bold text-black mb-3 font-body">Education</h3>
                     <div class="mb-4">
-                        <h4 class="text-sm font-bold text-black">Bachelor of Design</h4>
-                        <p class="text-gray-600 text-sm font-semibold">Design Institute</p>
-                        <p class="text-gray-500 text-xs">Specialized in User Experience Design</p>
+                        <h4 class="text-sm font-bold text-black font-body">Bachelor of Design</h4>
+                        <p class="text-gray-600 text-sm font-semibold font-body">Design Institute</p>
+                        <p class="text-gray-500 text-xs font-body">Specialized in User Experience Design</p>
                     </div>
                 </div>
 
                 <!-- Tools -->
                 <div class="mb-6">
-                    <h3 class="text-sm font-bold text-black mb-3">Tools</h3>
-                    <div class="space-y-0.5 text-gray-700 text-sm leading-tight">
+                    <h3 class="text-sm font-bold text-black mb-3 font-body">Tools</h3>
+                    <div class="space-y-0.5 text-gray-700 text-sm leading-tight font-body">
                         <p>Figma</p>
                         <p>Adobe Creative Suite</p>
                         <p>Sketch</p>
