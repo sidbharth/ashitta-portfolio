@@ -10,7 +10,7 @@
         function updateClock() {
             const now = new Date();
             const timeString = now.toLocaleTimeString('en-US', { 
-                hour12: false,
+                hour12: true,
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit'
@@ -186,10 +186,10 @@
                     
                     <div class="grid grid-cols-5 gap-6">
                         <div class="col-span-2">
-                            <h3 class="text-sm font-bold text-black font-title">1. CREATURE STUDIO</h3>
+                            <h3 class="text-sm font-bold text-black font-title tracking-wide">1. CREATURE STUDIO</h3>
                         </div>
                         <div class="col-span-3 space-y-4">
-                            <p class="text-gray-700 leading-relaxed font-body">
+                            <p class="text-gray-700 leading-snug font-body">
                                 Creatively directed and designed an interactive web presence for a creative agency known for bold, fun and whimsical experiences in XR, AR and VR
                             </p>
                             <button class="text-black font-medium hover:underline font-body">
