@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashitta - Product Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('./fonts/custom-font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'CustomFont', sans-serif;
+            background-color: #f5f5f5;
+            overflow: hidden; /* Prevents body scroll */
+        }
+        
+        /* Custom scrollbar styles for all columns */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Each column is independently scrollable */
+        .scroll-column {
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100 flex">
+        <!-- Left Column - Profile (INDEPENDENTLY SCROLLABLE) -->
+        <div class="w-1/3 bg-white p-8 scroll-column custom-scrollbar">
+            <div class="space-y-8">
+                <!-- Header -->
+                <div>
+                    <h1 class="text-4xl font-bold mb-2 text-black">Ashitta</h1>
+                    <p class="text-gray-600 text-sm">7:34:52 PM</p>
+                </div>
+
+                <!-- Product Designer Section -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-black">PRODUCT DESIGNER</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Crafting digital experiences that feel good and make money using design thinking, user psychology and design for business since 3+ years.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        Open to opportunities, excited to work in mental health, preventive heathcare, alternative education and B2B SaaS.
+                    </p>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-black">CONTACT</h2>
+                    <div class="space-y-2 text-gray-700">
+                        <p>ashittashah25@gmail.com</p>
+                        <p>Book a Call</p>
+                        <p>Twitter</p>
+                        <p>LinkedIn</p>
+                        <p>Behance</p>
+                        <p>Substack</p>
+                        <p>Download Resume</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-black">TESTIMONIALS</h2>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        "I've been collaborating with Ashitta for over a year now, and I can confidently say that their design expertise has been instrumental in transforming our digital presence."
+                    </p>
+                    <br>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        "Ashitta brings a unique blend of creativity and strategic thinking to every project. Their ability to understand user needs and translate them into compelling design solutions is remarkable."
+                    </p>
+                    <br>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        "Working with Ashitta has been a game-changer for our startup. Their design thinking approach helped us identify key user pain points and create solutions that truly resonate with our audience."
+                    </p>
+                    <br>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        "What sets Ashitta apart is their holistic approach to design - they don't just make things look good, they ensure every design decision serves a business purpose."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column - Work (INDEPENDENTLY SCROLLABLE) -->
+        <div class="w-1/3 bg-white mx-2 scroll-column custom-scrollbar">
+            <div class="p-8">
+                <div class="text-right mb-8">
+                    <h2 class="text-2xl font-bold text-black">WORK</h2>
+                    <p class="text-gray-600">4 Selected Projects</p>
+                </div>
+
+                <!-- Project 1 - Creature Studio -->
+                <div class="mb-12">
+                    <div class="relative mb-4">
+                        <div class="w-full h-64 bg-black rounded-lg overflow-hidden relative">
+                            <!-- Placeholder for laptop image -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-48 h-32 bg-gray-800 rounded-lg relative">
+                                    <div class="w-full h-24 bg-green-900 rounded-t-lg flex items-center justify-center">
+                                        <div class="text-green-400 text-xs font-mono text-center">
+                                            We are an immersive studio<br/>
+                                            creating experiences in XR
+                                        </div>
+                                    </div>
+                                    <div class="h-8 bg-gray-700 rounded-b-lg"></div>
+                                </div>
+                            </div>
+                            <!-- Mountains silhouette -->
+                            <div class="absolute bottom-0 left-0 right-0 h-20">
+                                <svg viewBox="0 0 400 80" class="w-full h-full">
+                                    <path d="M0,80 L0,40 L50,20 L100,50 L150,10 L200,30 L250,5 L300,25 L350,15 L400,35 L400,80 Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-black">1. CREATURE STUDIO</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Creatively directed and designed an interactive web presence for a creative agency known for bold, fun and whimsical experiences in XR, AR and VR. The project involved comprehensive user research, wireframing, and prototyping to create an immersive digital experience.
+                        </p>
+                        <button class="text-black font-medium hover:underline">
+                            Read Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-12">
+                    <div class="relative mb-4">
+                        <div class="w-full h-64 bg-blue-900 rounded-lg overflow-hidden relative flex items-center justify-center">
+                            <div class="text-white text-center">
+                                <h4 class="text-xl font-bold mb-2">HealthTech Platform</h4>
+                                <p class="text-sm opacity-80">Preventive Healthcare Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-black">2. HEALTHTECH PLATFORM</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Designed a comprehensive preventive healthcare platform focusing on user-centered design principles. Created intuitive dashboards for both patients and healthcare providers, emphasizing accessibility and clear information architecture.
+                        </p>
+                        <button class="text-black font-medium hover:underline">
+                            Read Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-12">
+                    <div class="relative mb-4">
+                        <div class="w-full h-64 bg-purple-900 rounded-lg overflow-hidden relative flex items-center justify-center">
+                            <div class="text-white text-center">
+                                <h4 class="text-xl font-bold mb-2">EduTech Solution</h4>
+                                <p class="text-sm opacity-80">Alternative Learning Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-black">3. EDUTECH SOLUTION</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Developed an innovative alternative education platform that reimagines online learning. Focused on creating engaging, interactive experiences that cater to different learning styles and promote student engagement.
+                        </p>
+                        <button class="text-black font-medium hover:underline">
+                            Read Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="mb-12">
+                    <div class="relative mb-4">
+                        <div class="w-full h-64 bg-gray-800 rounded-lg overflow-hidden relative flex items-center justify-center">
+                            <div class="text-white text-center">
+                                <h4 class="text-xl font-bold mb-2">B2B SaaS Platform</h4>
+                                <p class="text-sm opacity-80">Enterprise Workflow Solution</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-black">4. B2B SAAS PLATFORM</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Created a comprehensive B2B SaaS platform focusing on streamlined workflows and enterprise-grade functionality. Emphasized scalability, user adoption, and seamless integration with existing business processes.
+                        </p>
+                        <button class="text-black font-medium hover:underline">
+                            Read Case Study
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Resume (INDEPENDENTLY SCROLLABLE) -->
+        <div class="w-1/3 bg-white p-8 scroll-column custom-scrollbar">
+            <div class="text-right mb-8">
+                <h2 class="text-2xl font-bold text-black">RESUME</h2>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-8">
+                <h3 class="font-bold text-black mb-4">Skills</h3>
+                <div class="space-y-1 text-gray-700">
+                    <p>Research</p>
+                    <p>Heuristic Analysis</p>
+                    <p>UX Audit</p>
+                    <p>Design thinking</p>
+                    <p>Problem Solving</p>
+                    <p>UX Architecture</p>
+                    <p>UI Design</p>
+                    <p>Brainstorming</p>
+                    <p>Ideation</p>
+                    <p>Information Architecture</p>
+                    <p>Prototyping</p>
+                    <p>Wireframing</p>
+                    <p>User Testing</p>
+                    <p>A/B Testing</p>
+                    <p>Accessibility Design</p>
+                    <p>Design Systems</p>
+                    <p>Interaction Design</p>
+                    <p>Visual Design</p>
+                    <p>Brand Identity</p>
+                    <p>Typography</p>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="mb-8">
+                <h3 class="font-bold text-black mb-4">Experience</h3>
+                
+                <!-- UX Designer - AgilePoint -->
+                <div class="mb-6">
+                    <h4 class="font-bold text-black">UX Designer</h4>
+                    <p class="text-gray-600 mb-3">AgilePoint</p>
+                    
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li>• Contributed to the creation and maintenance of the design system to ensure consistency and scalability across products</li>
+                        <li>• Conducted UX audits to identify usability issues and improve user experience across key product areas</li>
+                        <li>• Improved UI design for existing demo applications to enhance visual appeal and usability</li>
+                        <li>• Designed custom icons, banners, and graphics aligned with brand identity</li>
+                        <li>• Created visual assets for social media marketing and product promotion</li>
+                        <li>• Designed intuitive, form-based web applications for enterprise clients</li>
+                        <li>• Developed demo websites to showcase platform capabilities and design standards</li>
+                        <li>• Collaborated closely with developers to ensure high-quality implementation of designs</li>
+                    </ul>
+                </div>
+
+                <!-- Web Design Consultant -->
+                <div class="mb-6">
+                    <h4 class="font-bold text-black">Web Design Consultant</h4>
+                    <p class="text-gray-600 mb-3">Freelance</p>
+                    
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li>• Designed and developed custom websites for small to medium businesses</li>
+                        <li>• Provided strategic design consultation to improve user engagement and conversion rates</li>
+                        <li>• Collaborated with clients to define project requirements and deliver pixel-perfect designs</li>
+                        <li>• Implemented responsive design principles to ensure optimal viewing across all devices</li>
+                        <li>• Conducted user research and testing to validate design decisions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-8">
+                <h3 class="font-bold text-black mb-4">Education</h3>
+                <div class="mb-4">
+                    <h4 class="font-bold text-black">Bachelor of Design</h4>
+                    <p class="text-gray-600">Design Institute</p>
+                    <p class="text-gray-500 text-sm">Specialized in User Experience Design</p>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="mb-8">
+                <h3 class="font-bold text-black mb-4">Tools</h3>
+                <div class="space-y-1 text-gray-700">
+                    <p>Figma</p>
+                    <p>Adobe Creative Suite</p>
+                    <p>Sketch</p>
+                    <p>InVision</p>
+                    <p>Principle</p>
+                    <p>Framer</p>
+                    <p>Miro</p>
+                    <p>Notion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
